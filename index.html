@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 
 <head>
+    <title>8BITSOUNDS</title>
+    <meta charset="UTF-8">
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        a:link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #fff;
+            text-decoration: none;
         }
 
         h1 {
@@ -41,7 +67,10 @@
         .menu {
             padding: 10px;
             text-align: center;
-
+            /* width: 100%; */
+            /* border-style: solid;
+            border-color: white;
+            border-width: 1px; */
         }
 
         #main {
@@ -53,35 +82,52 @@
 
 <body>
     <header>
-        8BIT SOUNDS
+        <a href="index.html">8BIT SOUNDS</a>
     </header>
     <div id="navigation">
         <div class="menu">
-            <a href="#">コイン/Coin</a>
+            <a href="#">コイン</a>
         </div>
         <div class="menu">
-            <a href="#">ビーム/Beam</a>
+            <a href="#">ビーム</a>
         </div>
         <div class="menu">
-            <a href="#">爆発/Explosion</a>
+            <a href="#">爆発</a>
         </div>
         <div class="menu">
-            <a href="#">パワーアップ/PowerUp</a>
+            <a href="#">パワーアップ</a>
         </div>
         <div class="menu">
-            <a href="#">攻撃/Attack</a>
+            <a href="#">攻撃</a>
         </div>
         <div class="menu">
-            <a href="#">ジャンプ/Jump</a>
+            <a href="#">ジャンプ</a>
         </div>
         <div class="menu">
-            <a href="#">選択/Select</a>
+            <a href="#">選択</a>
         </div>
         <div class="menu">
-            <a href="#">いろいろ/Random</a>
+            <a href="#">いろいろ</a>
         </div>
     </div>
     <div id="main">
+        <h1>Download</h1>
+        <table>
+            <tr>
+                <td>blip10</td>
+                <td><audio src="sounds/mp3/Blip_Select10.mp3" preload controls></audio><a
+                        href="../../image/design/tagindex_mini.gif" download="sounds/mp3/Blip_Select10.mp3">ダウンロード</a>
+                </td>
+            </tr>
+            <tr>
+                <td>blip20</td>
+                <td><audio src="sounds/mp3/Blip_Select1.mp3" preload controls></audio></td>
+            </tr>
+        </table>
+
+
+
+
         <h1>8BIT SOUNDS</h1>
         <p>完全無料の音素材集です</p>
 
@@ -92,6 +138,6 @@
         <p>公序良俗に反する行為での利用と有料での再配布</p>
     </div>
     <footer>
-        -- 8bit sounds -- &copy; UDONKONET
+        -- 8bit sounds -- &copy; <a href="https://udonko.net">UDONKONET</a>
     </footer>
 </body>
