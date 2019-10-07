@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <head>
-    <title>8BITSOUNDS</title>
+    <title>8BITSOUNDS -- 完全無料で商用可！フリーのファミコン風8bitk効果音素材 --</title>
     <meta charset="UTF-8">
-
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
     <style>
         body {
@@ -61,7 +63,23 @@
         #navigation {
             background-color: cadetblue;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+        }
+
+        #contents {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+
+        }
+
+        .filename {
+            padding: 20px;
+        }
+
+        .dl {
+            padding: 20px;
         }
 
         .menu {
@@ -86,56 +104,43 @@
     </header>
     <div id="navigation">
         <div class="menu">
-            <a href="#">コイン</a>
+            <a href="#" onclick="openMenu('Pickup_Coin');">コイン</a>
         </div>
         <div class="menu">
-            <a href="#">ビーム</a>
+            <a href="#" onclick="openMenu('Laser_Shoot');">レーザー</a>
         </div>
         <div class="menu">
-            <a href="#">爆発</a>
+            <a href="#" onclick="openMenu('Explosion');">爆発</a>
         </div>
         <div class="menu">
-            <a href="#">パワーアップ</a>
+            <a href="#" onclick="openMenu('Powerup');">パワーアップ</a>
         </div>
         <div class="menu">
-            <a href="#">攻撃</a>
+            <a href="#" onclick="openMenu('Hit_Hurt');">攻撃</a>
         </div>
         <div class="menu">
-            <a href="#">ジャンプ</a>
+            <a href="#" onclick="openMenu('Jump');">ジャンプ</a>
         </div>
         <div class="menu">
-            <a href="#">選択</a>
+            <a href="#" onclick="openMenu('Blip_Select');">ビープ音</a>
         </div>
         <div class="menu">
-            <a href="#">いろいろ</a>
+            <a href="#" onclick="openMenu('Randomize');">いろいろ</a>
         </div>
     </div>
     <div id="main">
-        <h1>Download</h1>
-        <table>
-            <tr>
-                <td>blip10</td>
-                <td><audio src="sounds/mp3/Blip_Select10.mp3" preload controls></audio><a
-                        href="../../image/design/tagindex_mini.gif" download="sounds/mp3/Blip_Select10.mp3">ダウンロード</a>
-                </td>
-            </tr>
-            <tr>
-                <td>blip20</td>
-                <td><audio src="sounds/mp3/Blip_Select1.mp3" preload controls></audio></td>
-            </tr>
-        </table>
+        <h1 class="headline">Download</h1>
+        <div id="contents">
 
+            <h1>About 8BIT SOUNDS</h1>
+            <p>完全無料の音素材集です</p>
 
-
-
-        <h1>8BIT SOUNDS</h1>
-        <p>完全無料の音素材集です</p>
-
-        <h1>利用規約</h1>
-        <h2>やってもいいよ</h2>
-        <p>加工・無加工問わず再配布、商用利用OK。</p>
-        <h2>これはだめ</h2>
-        <p>公序良俗に反する行為での利用と有料での再配布</p>
+            <h1>利用規約</h1>
+            <h2>やってもいいよ</h2>
+            <p>加工・無加工問わず再配布、商用利用OK。</p>
+            <h2>これはだめ</h2>
+            <p>公序良俗に反する行為での利用と有料での再配布</p>
+        </div>
     </div>
     <footer>
         -- 8bit sounds -- &copy; <a href="https://udonko.net">UDONKONET</a>
