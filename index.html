@@ -1,146 +1,96 @@
 <!DOCTYPE html>
 
 <head>
-    <title>8BITSOUNDS -- 完全無料で商用可！フリーのファミコン風8bitk効果音素材 --</title>
+    <title>8BITSOUNDS -- 完全無料で商用可！フリーのファミコン風8BIT効果音素材 --</title>
     <meta charset="UTF-8">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
     <script src="script.js"></script>
-
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            max-width: 800px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        a:link {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        header {
-            background-color: black;
-            color: white;
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        container {
-            background-color: black;
-        }
-
-        #navigation {
-            background-color: cadetblue;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        #contents {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: left;
-            align-items: center;
-
-        }
-
-        .filename {
-            padding: 20px;
-        }
-
-        .dl {
-            padding: 20px;
-        }
-
-        .menu {
-            padding: 10px;
-            text-align: center;
-            /* width: 100%; */
-            /* border-style: solid;
-            border-color: white;
-            border-width: 1px; */
-        }
-
-        #main {
-            background-color: gray;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <a href="index.html">8BIT SOUNDS</a>
+        <div>
+            <a href="index.html">
+                <h1>8BITSOUNDS</h1>
+            </a>
+        </div>
+        <div>
+            <h4>再配布・商用利用OK！　ファミコン風8BIT効果音フリー素材集</h4>
+        </div>
+
     </header>
     <div id="navigation">
         <div class="menu">
-            <a href="#" onclick="openMenu('Pickup_Coin');">コイン</a>
+            <a href="#" onclick="openMenu('Pickup_Coin','コイン');">コイン</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Laser_Shoot');">レーザー</a>
+            <a href="#" onclick="openMenu('Laser_Shoot','レーザー');">レーザー</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Explosion');">爆発</a>
+            <a href="#" onclick="openMenu('Explosion','爆発');">爆発</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Powerup');">パワーアップ</a>
+            <a href="#" onclick="openMenu('Powerup','パワーアップ');">パワーアップ</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Hit_Hurt');">攻撃</a>
+            <a href="#" onclick="openMenu('Hit_Hurt','攻撃');">攻撃</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Jump');">ジャンプ</a>
+            <a href="#" onclick="openMenu('Jump','ジャンプ');">ジャンプ</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Blip_Select');">ビープ音</a>
+            <a href="#" onclick="openMenu('Blip_Select','ビープ音');">ビープ音</a>
         </div>
         <div class="menu">
-            <a href="#" onclick="openMenu('Randomize');">いろいろ</a>
+            <a href="#" onclick="openMenu('Randomize','いろいろ');">いろいろ</a>
         </div>
     </div>
     <div id="main">
-        <h1 class="headline">Download</h1>
-        <div id="contents">
+        <h2 id="headline">8BITSOUNDSとは</h2>
+        <hr />
+        <div id="contents"></div>
+        <div id="top">
+            <p>8BITSOUNDSは完全無料の音素材集です。<br />
+                ファミコンのような8ビットサウンドの効果音を集めています。<br />
+                スマホアプリでもゲームでも動画でも、無料で何にでもご利用いただけます！
+            </p>
 
-            <h1>About 8BIT SOUNDS</h1>
-            <p>完全無料の音素材集です</p>
+            <br /><br /><br />
+            <h2>利用規約</h2>
+            <hr />
+            <h3><i class="fas fa-thumbs-up good"></i> やってもよいこと</h3>
+            <p>
+                <ul>
+                    <li>
+                        商用・非商用に関わらずアプリ、ゲーム、ウェブサイト、動画などの音素材としての利用
+                    </li>
+                    <li>
+                        加工・無加工を問わず、無料での再配布
+                    </li>
+                </ul>
+            </p>
+            <h3><i class="fas fa-skull-crossbones error"></i> 禁止事項</h3>
+            <p>
+                <ul>
+                    <li>公序良俗に反する行為での利用</li>
+                    <li>有料での再配布</li>
+                    <li>当サイトの管理者が不適切と判断した利用方法</li>
+                </ul>
+            </p>
+            <h3><i class="fas fa-exclamation-triangle warning"></i> 注意事項</h3>
+            <ul>
+                <li>当サイトの素材を利用したことによって発生したトラブルや事故などについて当サイトの管理者及び関係者はその責任を一切負いません</li>
+                <li>
+                    商用・非商用に関わらず利用許諾などの連絡は不要です。もし可能ならクレジットなどにサイト名を入れてくれたらうれしいです
+                </li>
 
-            <h1>利用規約</h1>
-            <h2>やってもいいよ</h2>
-            <p>加工・無加工問わず再配布、商用利用OK。</p>
-            <h2>これはだめ</h2>
-            <p>公序良俗に反する行為での利用と有料での再配布</p>
+            </ul>
         </div>
+    </div>
     </div>
     <footer>
         -- 8bit sounds -- &copy; <a href="https://udonko.net">UDONKONET</a>
