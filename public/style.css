@@ -97,6 +97,7 @@ footer {
 #ad {
     /* background-color: #EB5757; */
     flex-grow: 1;
+    padding-top: 30px;
 }
 
 #download {
