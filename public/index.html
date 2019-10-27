@@ -27,12 +27,15 @@
         gtag('config', 'UA-149682722-1');
     </script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+</head>
 
+<body>
+    <!-- Firebase analyticsの設置 -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -42,14 +45,14 @@
             projectId: "udonkonet-4deef",
             storageBucket: "udonkonet-4deef.appspot.com",
             messagingSenderId: "824449143952",
-            appId: "1:824449143952:web:a224c9be9e8c2cd0c1f415"
+            appId: "1:824449143952:web:a224c9be9e8c2cd0c1f415",
+            measurementId: "G-9F8STCHVBN"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
-</head>
 
-<body>
     <div id="wrapper">
         <header>
             <div>
